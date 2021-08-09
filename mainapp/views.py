@@ -5,15 +5,15 @@ from django.http import HttpResponse
 
 
 def landing_page(request):
-    return HttpResponse("Hello, World")
+    return HttpResponse("Hello, World! Nama Saya Ariq")
 
 
 def second_page(request):
-    return HttpResponse("Hello Second")
+    return HttpResponse("SecondPage")
 
 
 def profile(request):
-    return HttpResponse("Profile")
+    return HttpResponse("profile ku")
 
 
 def count(request, angka):
@@ -21,5 +21,17 @@ def count(request, angka):
     return HttpResponse(str(angka))
 
 
+def sapa(request, nama):
+    return HttpResponse("Halo "+nama)
+
+
 def example(request):
     return render(request, 'example.html')
+
+
+def newpage(request):
+    return HttpResponse("new")
+
+
+def a(request):
+    return HttpResponse()
