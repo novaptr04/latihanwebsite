@@ -39,3 +39,7 @@ def a(request):
 
 def resume_nova(request):
     return render(request, 'resume-nova.html')
+
+
+def toko_nova(request):
+    return render(request, 'toko-nova.html')
