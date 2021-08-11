@@ -35,3 +35,7 @@ def newpage(request):
 
 def a(request):
     return HttpResponse()
+
+
+def resume_nova(request):
+    return render(request, 'resume-nova.html')

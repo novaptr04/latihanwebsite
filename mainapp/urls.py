@@ -8,4 +8,5 @@ urlpatterns = [
     path('profile/', views.profile),
     path('second/', views.second_page),
     path('', views.landing_page),
+    path('resume-nova/', views.resume_nova),
 ]
